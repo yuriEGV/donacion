@@ -91,22 +91,22 @@ app.use(express.json());
 
 
 
-app.use('/usuarios', usuarioRoutes);
+app.use('/api/usuarios', usuarioRoutes);
 
 
 // Rutas de autenticación
-app.use('/auth', authRoutes);
+app.use('/api/auth', authRoutes);
 
 // Rutas de beneficiarios (protegidas)
-app.use('/beneficiarios', beneficiarioRoutes);
+app.use('/api/beneficiarios', beneficiarioRoutes);
 
 
 
 // Rutas de donaciones (protegidas)
-app.use('/donaciones', donacionRoutes);
+app.use('/api/donaciones', donacionRoutes);
 
 // Ruta de prueba
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.json('API de Donaciones está funcionando');
 });
 
