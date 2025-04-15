@@ -95,15 +95,15 @@ app.use('/usuarios', usuarioRoutes);
 
 
 // Rutas de autenticación
-app.use('/api/auth', authRoutes);
+app.use('/auth', authRoutes);
 
 // Rutas de beneficiarios (protegidas)
-app.use('/api/beneficiarios', beneficiarioRoutes);
+app.use('/beneficiarios', beneficiarioRoutes);
 
 
 
 // Rutas de donaciones (protegidas)
-app.use('/api/donaciones', donacionRoutes);
+app.use('/donaciones', donacionRoutes);
 
 // Ruta de prueba
 app.get('/', (req, res) => {
