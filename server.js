@@ -91,7 +91,7 @@ app.use(express.json());
 
 
 
-app.use('/api/usuarios', usuarioRoutes);
+app.use('/usuarios', usuarioRoutes);
 
 
 // Rutas de autenticación
